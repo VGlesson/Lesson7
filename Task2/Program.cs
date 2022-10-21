@@ -30,7 +30,7 @@ namespace Task2
             }
             for (int i = 0; i < triagles.Length; i++)
             {
-                Console.WriteLine("Площадь {0}-го треугольника = {1}", i + 1, triagles[i].Square());
+                Console.WriteLine("Площадь {0}-го треугольника = {1:.00}", i + 1, triagles[i].Square());
             }
             int maxSquaredTriIdx = 0;
             for (int i = 1; i < triagles.Length; i++)
@@ -38,7 +38,7 @@ namespace Task2
                 if (triagles[i].Square() > triagles[maxSquaredTriIdx].Square())
                     maxSquaredTriIdx = i;
             }
-            Console.WriteLine("Макс площадь у {0}-го треугольника", maxSquaredTriIdx + 1);
+            Console.WriteLine("Площадь у {0}-го треугольника больше", maxSquaredTriIdx + 1);
  
             Console.ReadKey();
         }
